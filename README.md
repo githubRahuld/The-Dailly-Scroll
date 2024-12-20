@@ -37,6 +37,37 @@ This is a full-stack blog website built with React for the frontend and Node.js 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/your-username/blog-website.git
+   git clone https://github.com/githubRahuld/The-Dailly-Scroll.git
    cd blog-website
    ```
+### Backend Configuration
+- Create a .env file in the backend directory with the following environment variables:
+
+   - MONGODB_URI=mongodb://localhost:27017/blogdb
+   - PORT=8000
+   - CORS_ORIGIN=*
+   - ACCESS_TOKEN_SECRET=
+   - ACCESS_TOKEN_EXPIRY=
+   - REFRESH_TOKEN_SECRET=
+   - REFRESH_TOKEN_EXPIRY=
+   - CLOUDINARY_CLOUD_NAME=
+   - CLOUDINARY_API_KEY=
+   - CLOUDINARY_API_SECRET=
+  
+### Frontend Configuration
+- Create a .env file in the backend directory with the following environment variables:
+
+  - VITE_API_BASE_URI=http://localhost:8000
+
+### Snapshots of TDS
+1. Home Page
+![Screenshot 2024-12-20 165153](https://github.com/user-attachments/assets/c8c3c3a8-444a-4523-8bc2-f638bd094b3b)
+   
+2. Post page
+![Screenshot 2024-12-20 165304](https://github.com/user-attachments/assets/ae2bcbf3-06e5-4274-a080-293f140935fc)
+
+3. Create post page
+![Screenshot 2024-12-20 165334](https://github.com/user-attachments/assets/bf0bccc9-8047-40c7-a3b2-cfed75c5032a)
+
+4. Dashboard
+![Screenshot 2024-12-20 165318](https://github.com/user-attachments/assets/a489300d-66af-48cb-9059-49771f876b7f)
