@@ -8,13 +8,19 @@ const app = express();
 
 dotenv.config({ path: "./.env" });
 
-app.use(
-    cors({
-        origin: process.env.CORS_ORIGIN,
-        methods: "GET,POST,PUT,DELETE,PATCH",
-        credentials: true,
-    })
-);
+// cors configuration
+const corsOptions = {
+  origin: ["https://the-dailly-scroll.vercel.app"],
+  credentials: true, 
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"], 
+  allowedHeaders: ["Content-Type", "Authorization"], 
+};
+
+// Apply CORS to all routes
+app.use(cors(corsOptions));
+
+// Ensure preflight (OPTIONS) requests also use the same CORS settings
+app.options("*", cors(corsOptions));
 
 app.use(express.json({ limit: "16kb" }));
 
