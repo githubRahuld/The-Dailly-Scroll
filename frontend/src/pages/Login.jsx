@@ -105,6 +105,22 @@ const Login = () => {
           Login
         </button>
       </form>
+         {/* Demo Credentials Section */}
+      <div className="mt-6 text-center text-sm text-gray-500 bg-gray-100 p-4 rounded-lg shadow-md">
+        <p className="font-semibold text-gray-700">Demo credentials:</p>
+        <div className="mt-2">
+          <p className="text-gray-600">
+            <span className="font-medium text-gray-800">Email:</span>{" "}
+            <strong className="text-indigo-600">
+              vikash.rathore@gmail.com
+            </strong>
+          </p>
+          <p className="text-gray-600">
+            <span className="font-medium text-gray-800">Password:</span>{" "}
+            <strong className="text-indigo-600">demo123</strong>
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
