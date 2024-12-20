@@ -10,7 +10,7 @@ dotenv.config({ path: "./.env" });
 
 // cors configuration
 const corsOptions = {
-  origin: ["https://the-dailly-scroll.vercel.app"],
+  origin: process.env.CORS_ORIGIN,
   credentials: true, 
   methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"], 
   allowedHeaders: ["Content-Type", "Authorization"], 
