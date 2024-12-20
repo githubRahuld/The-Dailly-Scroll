@@ -59,6 +59,7 @@ const Login = () => {
   };
 
   return (
+    <div className="bg-gray-100">
     <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-md">
       <h2 className="text-2xl font-semibold text-center mb-4">Login</h2>
       {error && (
@@ -121,6 +122,7 @@ const Login = () => {
           </p>
         </div>
       </div>
+    </div>
     </div>
   );
 };
