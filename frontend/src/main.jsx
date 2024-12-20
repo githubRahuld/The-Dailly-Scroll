@@ -15,7 +15,7 @@ import PostDetails from "./pages/PostDetails.jsx";
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <Home />,
     children: [
       {
         path: "/users/login",
